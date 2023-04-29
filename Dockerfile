@@ -12,5 +12,5 @@ RUN unzip adpitor.zip
 RUN cp -rvf adpitor-html/* .
 RUN rm -rf adpitor-html adpitor.zip
 CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
-EXPOSE 80
+EXPOSE 80 
 
